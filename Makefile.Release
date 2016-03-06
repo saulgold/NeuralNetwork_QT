@@ -4556,7 +4556,11 @@ release\realtime.obj: ..\NeuralNetworkUI\realtime.cpp ../NeuralNetworkUI/realtim
 		C:\Qt1\5.5\msvc2013\include\QtPrintSupport\qtprintsupportversion.h \
 		ui_realtime.h \
 		C:\Qt1\5.5\msvc2013\include\QtCore\QTimer \
-		C:\Qt1\5.5\msvc2013\include\QtCore\QThread
+		C:\Qt1\5.5\msvc2013\include\QtCore\QThread \
+		../NeuralNetworkUI/Net.h \
+		../NeuralNetworkUI/Neuron.h \
+		../NeuralNetworkUI/mainwindow.h \
+		../NeuralNetworkUI/TrainingData.h
 
 release\moc_mainwindow.obj: release\moc_mainwindow.cpp 
 
