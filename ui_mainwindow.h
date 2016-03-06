@@ -43,6 +43,8 @@ public:
     QLabel *label_2;
     QPushButton *pushButton_5;
     QTextEdit *textEdit_2;
+    QCustomPlot *Chart_2;
+    QPushButton *pushButton_6;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -51,7 +53,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(622, 401);
+        MainWindow->resize(772, 654);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         pushButton = new QPushButton(centralWidget);
@@ -80,7 +82,7 @@ public:
         pushButton_4->setGeometry(QRect(30, 150, 80, 21));
         Chart = new QCustomPlot(centralWidget);
         Chart->setObjectName(QStringLiteral("Chart"));
-        Chart->setGeometry(QRect(269, 140, 321, 171));
+        Chart->setGeometry(QRect(269, 140, 491, 171));
         label_2 = new QLabel(centralWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(30, 40, 221, 21));
@@ -90,10 +92,16 @@ public:
         textEdit_2 = new QTextEdit(centralWidget);
         textEdit_2->setObjectName(QStringLiteral("textEdit_2"));
         textEdit_2->setGeometry(QRect(270, 40, 71, 16));
+        Chart_2 = new QCustomPlot(centralWidget);
+        Chart_2->setObjectName(QStringLiteral("Chart_2"));
+        Chart_2->setGeometry(QRect(270, 320, 491, 171));
+        pushButton_6 = new QPushButton(centralWidget);
+        pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
+        pushButton_6->setGeometry(QRect(30, 220, 80, 21));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 622, 20));
+        menuBar->setGeometry(QRect(0, 0, 772, 20));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -127,6 +135,7 @@ public:
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">0.7</p></body></html>", 0));
+        pushButton_6->setText(QApplication::translate("MainWindow", "Check Real Time", 0));
     } // retranslateUi
 
 };
